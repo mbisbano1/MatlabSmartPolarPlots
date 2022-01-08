@@ -15,7 +15,7 @@
 
 
 
-### **Plot Setup Tab: Configuring the plot to your liking** <section-1>
+### **Plot Setup Tab: Configuring the plot to your liking** <#section-1>
 - #### **Plot Style**
 	- Choose between a normal linear scale or a dB scale.
 - #### **Scale Factor**
@@ -50,7 +50,7 @@
 - #### **Half Power Helper Line**
 	- This Toggle button enables/disables the drawing of the -3dB marker line. This is useful for many engineering applications, and is plotted with grey dotted lines. For dB plots it is always drawn at -3dB, but for linear plots it is either drawn at 0.707 or 0.5, depending on the selected Scale Factor.
 
-### **Data Import Tab: Plotting directivity from recorded or old data**
+### **Data Import Tab: Plotting directivity from recorded or old data** <#section-2>
 - #### **Excel and CSV File Imports**
 	- Excel (.xlsx) and .CSV files are both common ways to log, store, and transfer engineering data. To import data from these file types into this application, the files must be formatted in a certain way. The first column of the file **MUST** be theta values (in degrees), and the second column **MUST** be the corresponding data to be plotted **IN LINEAR SCALE**.
 	-The application will not do any processing of the data inported from external sources, so if the data goes below 0 or above 1, you will need to correct for that externally.
@@ -76,7 +76,7 @@ save filename.mat theta linearDirectivity
 - #### **Plotting the Imported Data**
 	- Imported Data will only be plotted if the toggle switch in the Import Data tab is set to On. This prevents the default data in the table from displaying when a user has no need to import data.
 
-### **Function Input and Plotting:**
+### **Function Input and Plotting:** <#section-3>
 - #### **User Defined Functions**
 	- The application can plot up to 7 curves at the same time, and 6 of these are user defined. These 6 functions can be enabled/disabled by selecting their corresponding **"Function #"** button to the left of the input box. By default, only **"Function 1"** is enabled for plotting. 
 		- To modify these functions, the user must type in an equation in terms of **"theta"**, like the example functions provided do. This equation can use any standard matlab function, and operates under the assumption that **"theta"** is in radians to avoid the need for cosd() or any other degree based matlab functions. 
@@ -86,7 +86,7 @@ save filename.mat theta linearDirectivity
 	- To generate the plot template based on settings you have selected, simply click the **"Generate Plot Template"** button. You should see the plot template appear and the status lamp next to the button light up. When settings affecting the plot template are changed, the lamp next to the button will go off, indicating that you need to click the button again to update for the changed settings.
 	- To generate the plots you have selected, simply click the **"Plot Function"** button. You should see the plots appear and the status lamp next to the button light up. If the plot template needs to be updated or different functions are specified/selected, the lamp next to the button will turn off, indicating that you need to click the button again to update the plots. 
 
-### **Saving Plot Images:**
+### **Saving Plot Images:** <#section-4>
 - #### **MatLab\'s Figure Tools**
 	- To save an image of the generated plots, move your mouse cursor over the plot and a set of icons should appear to the top right of it. If you hover over the leftmost one, three options should appear in a dropdown menu.
 		- **Save As:** Clicking this option will allow you to save the image as a file, such as a .png or .jpg. 
