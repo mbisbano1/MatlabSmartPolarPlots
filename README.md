@@ -4,7 +4,7 @@
 
 1. [Plot Setup Tab](https://github.com/mbisbano1/MatlabSmartPolarPlots/blob/main/README.md#plot-setup-tab-configuring-the-plot-to-your-liking)
 2. [Data Import Tab](https://github.com/mbisbano1/MatlabSmartPolarPlots/blob/main/README.md#data-import-tab-plotting-directivity-from-recorded-or-old-data)
-3. [Function Input and Plotting](#section-3)
+3. [Function Input and Plotting](https://github.com/mbisbano1/MatlabSmartPolarPlots/blob/main/README.md#function-input-and-plotting)
 4. [Saving Plot Images](#section-4)
 
 
