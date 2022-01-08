@@ -96,7 +96,8 @@ save filename.mat theta linearDirectivity
 
 ### **Saving Plot Images:**
 - #### **MatLab\'s Figure Tools**
-	- To save an image of the generated plots, move your mouse cursor over the plot and a set of icons should appear to the top right of it. If you hover over the leftmost one, three options should appear in a dropdown menu.
-		- **Save As:** Clicking this option will allow you to save the image as a file, such as a .png or .jpg. 
-		- **Copy as Image:** Clicking this option will copy the image to your clipboard, where you should be able to paste it into a Word document or other file using "**CTRL** **+** **V**"
-		- **Copy as Vector Graphic:** Clicking this option will also copy the image to your clipboard, providing the same functionality as the "Copy as Image" option, except it will be a Vector Graphic, which performs better for scaling and resizing, and should retain the information of the image better if you plan on resizing a lot.
+	- To save an image of the generated plots, the "Copy Figure to Clipboard and open external Figure Window" button handles this. 
+		- If you want to put the image in some other file, like a Word document, after pressing this button the image will be copied to your clipboard, so you just have to press "**CTRL** **+** **V**" in your document. When the new figure window opens after clicking the button, you can close it. (Unfortunately the figure opening is a necessary function).
+		- If you want to save the image as a standalone file, you can do this from within the external figure that opens, using the save button, specifying file name, and selecting the desired file type.
+	
+		
