@@ -55,6 +55,9 @@
 		- For 360° plots this setting depends on your preference.
 		- For 180° plots the setting should have no effect.
 
+- #### **Default Settings Modes**
+	- These Toggle buttons offer a few pre-configured settings for most use cases.
+
 ### **Data Import Tab: Plotting directivity from recorded or old data**
 - #### **Excel and CSV File Imports**
 	- Excel (.xlsx) and .CSV files are both common ways to log, store, and transfer engineering data. To import data from these file types into this application, the files must be formatted in a certain way. The first column of the file **MUST** be theta values (in degrees), and the second column **MUST** be the corresponding data to be plotted **IN LINEAR SCALE**.
