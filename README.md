@@ -50,6 +50,11 @@
 - #### **Half Power Helper Line**
 	- This Toggle button enables/disables the drawing of the -3dB marker line. This is useful for many engineering applications, and is plotted with grey dotted lines. For dB plots it is always drawn at -3dB, but for linear plots it is either drawn at 0.707 or 0.5, depending on the selected Scale Factor.
 
+- #### **Discard Redundant Mirrors**
+	- This Toggle button enables/disables the plotting of functions (that the application determines sufficiently symmetrical over the horizontal axis) below the horizontal axis. 
+		- For 360° plots this setting depends on your preference.
+		- For 180° plots the setting should have no effect.
+
 ### **Data Import Tab: Plotting directivity from recorded or old data**
 - #### **Excel and CSV File Imports**
 	- Excel (.xlsx) and .CSV files are both common ways to log, store, and transfer engineering data. To import data from these file types into this application, the files must be formatted in a certain way. The first column of the file **MUST** be theta values (in degrees), and the second column **MUST** be the corresponding data to be plotted **IN LINEAR SCALE**.
