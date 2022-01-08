@@ -15,7 +15,7 @@
 
 
 
-### **Plot Setup Tab: Configuring the plot to your liking** 
+### **Plot Setup Tab: Configuring the plot to your liking** <section-1>
 - #### **Plot Style**
 	- Choose between a normal linear scale or a dB scale.
 - #### **Scale Factor**
