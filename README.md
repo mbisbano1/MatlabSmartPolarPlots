@@ -1,5 +1,20 @@
 ## **Smart Directivity Polar Plots in MatLab**
 
+### Table of Contents:
+
+1. [Plot Setup Tab](#section-1)
+2. [Data Import Tab](#section-2)
+3. [Function Input and Plotting](#section-3)
+4. [Saving Plot Images](#section-4)
+
+
+
+
+
+
+
+
+
 ### **Plot Setup Tab: Configuring the plot to your liking** 
 - #### **Plot Style**
 	- Choose between a normal linear scale or a dB scale.
