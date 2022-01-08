@@ -1,5 +1,6 @@
 ## Install Standalone Executable:
-	- To install a standalone executable (Windows Only), download and run the latest 'SmartPolarPlotsInstaller_web.exe' from this repository.
+	- To install a standalone executable (Windows Only), download and run the latest 
+	'SmartPolarPlotsInstaller_web.exe' from this repository.
 
 ## Install Matlab App:
 	- To install the tool as a matlab app:
