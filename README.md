@@ -95,8 +95,6 @@ save filename.mat theta linearDirectivity
 	- To generate the plots you have selected, simply click the **"Plot Function"** button. You should see the plots appear and the status lamp next to the button light up. If the plot template needs to be updated or different functions are specified/selected, the lamp next to the button will turn off, indicating that you need to click the button again to update the plots. 
 
 ### **Saving Plot Images:**
-- To save an image of the generated plots, the "Copy Figure to Clipboard and open external Figure Window" button handles this. 
-	- If you want to put the image in some other file, like a Word document, after pressing this button the image will be copied to your clipboard, so you just have to press "**CTRL** **+** **V**" in your document. When the new figure window opens after clicking the button, you can close it. (Unfortunately the figure opening is a necessary function).
+- To save an image of the generated plots, the "Open External Figure Window for Saving/Copying Image" button handles this.
 	- If you want to save the image as a standalone file, you can do this from within the external figure that opens, using the save button, specifying file name, and selecting the desired file type.
-	
-		
+	- If you want to copy the image into another file, like a Word document, use the toolbar above the image and select the "Copy as Image" option.
