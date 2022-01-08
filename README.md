@@ -43,15 +43,16 @@
 - #### **Matlab Data File (.MAT) Imports**
 	- Matlab Data Files (.MAT) are slightly different for importing into this application. The file **MUST** contain atleast two variables, which must be named **"theta"** and **"linearDirectivity"** accordingly. 
 		- The **"theta"** variable must be a row array of degrees, which commonly could be generated using some variation of the code line below:
-	```
+```
 theta = 0:0.5:360;
 ```
-		- The **"linearDirectivity"** variable must be a row array of the same length as the theta variable, which could be generated with some variation of the code line below:
-	```
+
+- The **"linearDirectivity"** variable must be a row array of the same length as the theta variable, which could be generated with some variation of the code line below:
+```
 linearDirectivity = abs(cos(deg2rad(theta)));
 ```
-	- Once the **"theta"** and **"linearDirectivity"** variables have been generated in your MatLab workspace, you can save them into a .MAT file type using the command shown below in your MatLab command line:
-	```
+- Once the **"theta"** and **"linearDirectivity"** variables have been generated in your MatLab workspace, you can save them into a .MAT file type using the command shown below in your MatLab command line:
+```
 save filename.mat theta linearDirectivity
 ```
 - #### **Viewing the Imported Data**
