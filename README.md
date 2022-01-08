@@ -2,7 +2,7 @@
 
 ### Table of Contents:
 
-1. [Plot Setup Tab](#section-1)
+1. [Plot Setup Tab](https://github.com/mbisbano1/MatlabSmartPolarPlots/blob/main/README.md#plot-setup-tab-configuring-the-plot-to-your-liking)
 2. [Data Import Tab](#section-2)
 3. [Function Input and Plotting](#section-3)
 4. [Saving Plot Images](#section-4)
