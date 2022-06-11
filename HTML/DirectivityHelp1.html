@@ -1,0 +1,44 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>DirectivityHelp1.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h3 id="directivity-calculations-quantify-directive-gain">
+      <strong>Directivity Calculations: Quantify Directive Gain</strong>
+    </h3>
+    <p>Directivity Calculations are performed following a modified version of Equation 7.6.8 from KFCS. Assuming Uniformity in Phi, we can simplify this and only integrate through theta, as shown in the equation below.</p>
+	<img src="DirectivityEquationFull.png">
+    <p>Computation is done using MATLAB's trapz() function, which approximates integration through the Trapezoidal Riemann Sum. Accuracy is proportional to the theta measurement step sizes, with larger step sizes resulting in more gross approximations.</p>
+    <p>To avoid complications at zero crossings of the sin(theta) function, inputs are broken up in quadrant segments, integrated separately, and then summed. Due to this, the input format for data is quite particular. Some rules for input formats are listed below:</p>
+    <ol>
+      <li>
+        <p>
+          <strong>Uniform Theta Step Size</strong>: The difference in theta from one data point to the next must be uniform over the entire set of data. Meaning measurements taken from 0 to 360 degrees with a step size of 1 degree will be taken at 0, 1, 2, ..., 358, 359 degrees.</p>
+      </li>
+      <li>
+        <p>
+          <strong>Theta Bounds</strong>: The edges of sample points must be in an order expected by Directivity Calculation code. You cannot expect data taken starting at 30 degrees and going to 389 degrees to work properly, and to compensate for this you may need to manually reformat some measurement data before inputting/importing it into this program. Acceptable formats are listed below, with dTheta being the theta step size between each sample:</p>
+        <ul>
+          <li>-180 to (180-dTheta) degrees</li>
+          <li>-90 to (90-dTheta) degrees</li>
+          <li>0 to (360-dTheta) degrees</li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          <strong>Sample Overlap</strong>: Notice in the Theta Bounds rule that the range does not allow overlapping samples (0 and 360 degrees, etc), so if your imported data contains these overlap points, you must remove them manually, either using the Remove First/Last Element buttons or externally before importing. An example would be data collected between 0 and 360 with a dTheta of 0.1 degree. The correct range for importing would have a <strong>minimum</strong> theta of 0 degrees and a <strong>maximum</strong> theta of 359.9 degrees.</p>
+      </li>
+    </ol>
+  </body>
+</html>
