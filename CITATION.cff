@@ -1,0 +1,21 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: SmartPolarPlots
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Michael
+    family-names: Bisbano
+    email: mbisbano1@umassd.edu
+    affiliation: University of Massachusetts Dartmouth
+repository-code: 'https://github.com/mbisbano1/MatlabSmartPolarPlots'
+abstract: >-
+  A handy utility for generating different types of polar
+  plots for publication, primarily tailored to directivity
+  plots 
+license: GPL-3.0
+date-released: '2023-03-05'
