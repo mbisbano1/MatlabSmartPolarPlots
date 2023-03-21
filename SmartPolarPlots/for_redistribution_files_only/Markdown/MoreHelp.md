@@ -1,0 +1,3 @@
+### **More Help on GitHub Page**
+If you are having issues beyond what is explained in these Help Tabs, feel free to browse for help on the Project's GitHub page. You will be able to see the source code, latest releases, and can even report an issue through the Issues page linked below. This will generate an email with your issues to every GitHub account that maintains the repository, and offers a clean method for those fixing it to track progress and update you once it has been resolved. Any critiques on the user interface or requests for more features are welcome, and can also be made through the *Issues* page as well.
+

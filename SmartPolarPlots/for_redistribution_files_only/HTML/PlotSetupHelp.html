@@ -1,0 +1,144 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>PlotSetupHelp.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h3 id="plot-setup-tab-configuring-the-plot-to-your-liking">
+      <strong>Plot Setup Tab: Configuring the plot to your liking</strong>
+    </h3>
+    <ul>
+      <li>
+        <h4 id="plot-style">
+          <strong>Plot Style</strong>
+        </h4>
+        <ul>
+          <li>Choose between a normal linear scale or a dB scale.</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="scale-factor">
+          <strong>Scale Factor</strong>
+        </h4>
+        <ul>
+          <li>In the conversion from linear to dB, there are two common scale factors used depending on convention and the units being measured/reported. In the world of EE, we commonly use 10 for representing Power measurements and 20 for things that can be squared to represent power, like Voltage or Pressure.
+<ul><li>10 for Power</li><li>20 for Pressure, Voltage, etc.</li></ul></li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="radial-label-location">
+          <strong>Radial Label Location</strong>
+        </h4>
+        <ul>
+          <li>This Selection box determines where in the figure the radial axis labels are located.</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="db-scale-maximum-db-scale-minimum">
+          <strong>dB Scale Maximum &amp; dB Scale Minimum</strong>
+        </h4>
+        <ul>
+          <li>Conventionally, a dB polar plot for displaying directivity will have a maximum of 0 and a minimum of 40, but these values may be tweaked to suit more flexible needs.</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="y-minimum">
+          <strong>Y Minimum</strong>
+        </h4>
+        <ul>
+          <li>This value adjusts how much room is left below the origin of the polar plot. For plots where the entire functions fall between -90 and 90 degrees, this can be set to 0, but when you want the full 360 degrees displayed this should be set to 1.</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="theta-label-step-value">
+          <strong>Theta Label Step Value</strong>
+        </h4>
+        <ul>
+          <li>This parameter adjusts at which angle increments the angle label lines are drawn in the background of the plot. Default is 30 degrees.</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="max-theta">
+          <strong>Max Theta</strong>
+        </h4>
+        <ul>
+          <li>This parameter adjusts the maximum +- angle drawn on for angle label lines. If you only want the top half of the polar plot, you may set this to 90, otherwise keeping this at 180 will be sufficient for most cases.</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="radial-label-values-decreasing-order">
+          <strong>Radial Label Values: Decreasing Order</strong>
+        </h4>
+        <ul>
+          <li>This field is where the radius labels are entered. To work correctly, they must be entered in decreasing order.
+<ul><li>For linear plots they should start from a maximum like 1, and decrease. They should not contain 0.</li><li>For dB plots, they should start at a maximum less than or equal to the defined <strong>dB Scale Maximum</strong> and decrease.</li></ul></li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="radial-label-value-one-sided-bandwidths">
+          <strong>Radial Label Value One Sided Bandwidths</strong>
+        </h4>
+        <ul>
+          <li>This field is where shape of the plot template is defined, for each <strong>Radial Label Value</strong> listed above, specify what the maximum (one sided) angle you want that radial arch to cross is. You must have atleast the same amount of values here as in the <strong>Radial Label Value</strong> field.
+<ul><li><strong>For 360 Degree Plots</strong> If you want 360 degree plots, you must set every one of these values to 180. This will allow all of the radius marker lines to swing from -180 to 180 degrees.</li><li><strong>For 180 Degree Plots</strong> If you only want to see the top half of the plot, you must set every one of these values to 90. This will allow all of the radius marker lines to swing from -90 to 90 degrees.</li></ul></li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="default-settings-modes">
+          <strong>Default Settings Modes</strong>
+        </h4>
+        <ul>
+          <li>These Toggle buttons offer a few pre-configured settings for many use cases.</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="half-power-helper-line">
+          <strong>Half Power Helper Line</strong>
+        </h4>
+        <ul>
+          <li>This Toggle button enables/disables the drawing of the -3dB marker line. This is useful for many engineering applications, and is plotted with grey dotted lines. For dB plots it is always drawn at -3dB, but for linear plots it is either drawn at 0.707 or 0.5, depending on the selected Scale Factor.</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="discard-redundant-mirrors">
+          <strong>Discard Redundant Mirrors</strong>
+        </h4>
+        <ul>
+          <li>This Toggle button enables/disables the plotting of functions (that the application determines sufficiently symmetrical over the horizontal axis) below the horizontal axis.
+<ul><li>For 360° plots this setting depends on your preference.</li><li>For 180° plots the setting should have no effect.</li></ul></li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="legend-settings">
+          <strong>Legend Settings</strong>
+        </h4>
+        <ul>
+          <li>The user can configure if/where the Legend appears near the plot. After updating any of these settings click <strong>Plot Function</strong> again to update the display.</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="custom-settings-files">
+          <strong>Custom Settings Files</strong>
+        </h4>
+        <ul>
+          <li>These Export and Load buttons allow user defined configurations to be saved for later or shared with others. The settings fields that will be saved/loaded are:
+<ul><li>Plot Style</li><li>Scale Factor</li><li>Radial Label Location</li><li>dB Scale Maximum</li><li>dB Scale Minimum</li><li>Y Minimum</li><li>Theta Label Step Size</li><li>Max Theta</li><li>Radial Label Values: Decreasing Order</li><li>Radial Label Value One Sided BW</li><li>Half Power Helper Line</li><li>Discard Redundant Mirrors</li><li>Legend Settings</li><li>Function Bank Line Types and Line Colors</li></ul></li>
+          <li>
+            <strong>Export</strong>: To save your current settings click the <strong>Export Settings</strong> button, and specify a File name. This will save your settings as an Excel file, which can be loaded in and parsed later. Be sure to name the file properly.</li>
+          <li>
+            <strong>Load</strong>: To load previously saved settings click the <strong>Load Settings</strong> button, and select the Excel file you would like to load. This will configure all settings to match those saved in the target file.</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

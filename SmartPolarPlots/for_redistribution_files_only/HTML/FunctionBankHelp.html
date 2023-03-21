@@ -1,0 +1,80 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>FunctionBank.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h3 id="function-bank-specify-what-to-plot">
+      <strong>Function Bank: Specify what to Plot</strong>
+    </h3>
+    <ul>
+      <li>
+        <h4 id="function-toggles">
+          <strong>Function Toggles</strong>
+        </h4>
+        <ul>
+          <li>Enable/Disable the plotting of a given function. If the Function # button is Gray, it will be plotted.</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="equation-entry-fields">
+          <strong>Equation Entry Fields</strong>
+        </h4>
+        <ul>
+          <li>Manually specify an equation to plot as a function of theta. These boxes will be pre-filled upon starting the program with some examples.</li>
+          <li>
+            <strong>ABSOLUTE VALUE</strong> is taken on the resulting values before plotting.</li>
+          <li>
+            <strong>SYNTAX</strong>: All equations should follow the standard matlab equation syntax, and the <strong>theta</strong> variable is a vector so the . (dot) operator should be used for multiplications or divides.</li>
+          <li>
+            <strong>Predefined Functions</strong>: Functions that are selected in the Predefined Patterns tab will type in the correct equation here for the user.</li>
+          <li>
+            <strong>SINC &amp; JINC</strong>: To use SINC and JINC functions, you must use type them specially, as they are not standard functions in Matlab and as such I had to add my own versions to this app. These functions remove the discontinuity at x == 0. Call these using the app.mysinc(argument) notation.
+<ul><li><strong>SINC</strong>: y = app.mysinc(x) = sin(pi * x)/(pi * x)</li><li><strong>JINC</strong>: y = app.myjinc(x) = 2*besselj(1,x)/(x)</li></ul></li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="legend-entries">
+          <strong>Legend Entries</strong>
+        </h4>
+        <ul>
+          <li>If the Plot Legend is enabled, the strings shown in these fields will be displayed for the given functions' Legend Entry.</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="directivities">
+          <strong>Directivities</strong>
+        </h4>
+        <ul>
+          <li>If the function being plotted is correctly imported/typed in properly <strong>AND</strong> it is computationally reasonable to solve the Directivity for, the functions' directivity will be displayed here after <strong>Plot Function</strong> is clicked. If the calculation of Directivity fails for any reason, the field will be populated with a -1. Read more about the calculation of Directivity values in the Directivity help tab.</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="line-type">
+          <strong>Line Type</strong>
+        </h4>
+        <ul>
+          <li>To allow greater differentiation between different functions being plotted (especially when only using black and white) each functions' line type can be specified. This dropdown allows the user to select the line type for each function.</li>
+        </ul>
+      </li>
+      <li>
+        <h4 id="line-color">
+          <strong>Line Color</strong>
+        </h4>
+        <ul>
+          <li>Each functions' color can be specified for plotting. This dropdown allows the user to specify the color of each function. By Right clicking the 'Line Color' text a few presets for line colors are available.</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

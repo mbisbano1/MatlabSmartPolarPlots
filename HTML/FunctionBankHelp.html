@@ -40,7 +40,7 @@ td, h1, h2, h3, h4, h5, p, ul, ol, li {
             <strong>Predefined Functions</strong>: Functions that are selected in the Predefined Patterns tab will type in the correct equation here for the user.</li>
           <li>
             <strong>SINC &amp; JINC</strong>: To use SINC and JINC functions, you must use type them specially, as they are not standard functions in Matlab and as such I had to add my own versions to this app. These functions remove the discontinuity at x == 0. Call these using the app.mysinc(argument) notation.
-<ul><li><strong>SINC</strong>: y = app.mysinc(x) = sin(pi * x)/(pi * x)</li><li><strong>JINC</strong>: y = app.myjinc(x) = 2*besselj(1,x)/(x)</li></ul></li>
+<ul><li><strong>SINC</strong>: y = app.mysinc(x) = |sin(x)/(x)|</li><li><strong>JINC</strong>: y = app.myjinc(x) = 2*besselj(1,x)/(x)</li></ul></li>
         </ul>
       </li>
       <li>

@@ -1,0 +1,99 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="3885174130" file="V:\Documents\GitHub\MatlabSmartPolarPlots\Smart Polar Plots.prj" location="V:\Documents\GitHub\MatlabSmartPolarPlots" name="Smart Polar Plots" target="target.mlapps" target-name="Package App">
+    <param.appname>Smart Polar Plots</param.appname>
+    <param.authnamewatermark>Michael Bisbano</param.authnamewatermark>
+    <param.email>bisbano.michael@gmail.com</param.email>
+    <param.company>UMASSD</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>Flexible utility allowing creation of properly formatted polar plots for publication or analysis.</param.summary>
+    <param.description />
+    <param.screenshot>C:\Users\mbisbano\AppData\Local\Temp\tp1b99933e_9769_4dac_ab40_62a94452966c.png</param.screenshot>
+    <param.version>3.1</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}\MLAPP</param.output>
+    <param.guid>15a111ca-a570-41be-b65a-cfd3cd1fdffa</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.description />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\DirectionalFactorPolarPlotsV3.mlapp</file>
+    </fileset.main>
+    <fileset.depfun />
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\CITATION.cff</file>
+      <file>${PROJECT_ROOT}\CSV_Import_Template.csv</file>
+      <file>${PROJECT_ROOT}\HTML</file>
+      <file>${PROJECT_ROOT}\importTemplate.xlsx</file>
+      <file>${PROJECT_ROOT}\InstallationGuide.md</file>
+      <file>${PROJECT_ROOT}\LICENSE.txt</file>
+      <file>${PROJECT_ROOT}\Markdown</file>
+      <file>${PROJECT_ROOT}\README.md</file>
+      <file>${PROJECT_ROOT}\testMat.mat</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}" name="MLAPP" optional="false">V:\Documents\GitHub\MatlabSmartPolarPlots\MLAPP</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2022b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
