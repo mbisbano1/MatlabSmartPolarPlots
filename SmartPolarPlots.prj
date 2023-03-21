@@ -1,0 +1,152 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="3274234324" file="V:\Documents\GitHub\MatlabSmartPolarPlots\SmartPolarPlots.prj" location="V:\Documents\GitHub\MatlabSmartPolarPlots" name="SmartPolarPlots" preferred-package-location="V:\Documents\GitHub\MatlabSmartPolarPlots\SmartPolarPlots\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>SmartPolarPlots</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>3.1</param.version>
+    <param.authnamewatermark>Michael Bisbano</param.authnamewatermark>
+    <param.email>bisbano.michael@gmail.com</param.email>
+    <param.company>UMASSD</param.company>
+    <param.summary>Flexible utility allowing creation of properly formatted polar plots for publication or analysis.</param.summary>
+    <param.description />
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\UMASSD\SmartPolarPlots\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\SmartPolarPlots\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\SmartPolarPlots\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\SmartPolarPlots\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\SmartPolarPlots</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>SmartPolarPlots_InstallerV3_1_WEB</param.web.mcr.name>
+    <param.package.mcr.name>SmartPolarPlots_InstallerV3_1_MCR</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <param.native.matlab>false</param.native.matlab>
+    <param.checkbox>false</param.checkbox>
+    <param.example />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments</param.help.text>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.description />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+      <param.native.matlab />
+      <param.checkbox />
+      <param.example />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\DirectionalFactorPolarPlotsV3.mlapp</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\CSV_Import_Template.csv</file>
+      <file>${PROJECT_ROOT}\importTemplate.xlsx</file>
+      <file>${PROJECT_ROOT}\testMat.mat</file>
+    </fileset.resources>
+    <fileset.package>
+      <file>${PROJECT_ROOT}\CITATION.cff</file>
+      <file>${PROJECT_ROOT}\CSV_Import_Template.csv</file>
+      <file>${PROJECT_ROOT}\HTML</file>
+      <file>${PROJECT_ROOT}\importTemplate.xlsx</file>
+      <file>${PROJECT_ROOT}\InstallationGuide.md</file>
+      <file>${PROJECT_ROOT}\LICENSE.txt</file>
+      <file>${PROJECT_ROOT}\Markdown</file>
+      <file>${PROJECT_ROOT}\README.md</file>
+      <file>${PROJECT_ROOT}\testMat.mat</file>
+    </fileset.package>
+    <fileset.depfun />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\SmartPolarPlots\for_testing" name="splash.png" optional="false">V:\Documents\GitHub\MatlabSmartPolarPlots\SmartPolarPlots\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\SmartPolarPlots\for_testing" name="SmartPolarPlots.exe" optional="false">V:\Documents\GitHub\MatlabSmartPolarPlots\SmartPolarPlots\for_testing\SmartPolarPlots.exe</file>
+      <file location="${PROJECT_ROOT}\SmartPolarPlots\for_testing" name="readme.txt" optional="true">V:\Documents\GitHub\MatlabSmartPolarPlots\SmartPolarPlots\for_testing\readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2022b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

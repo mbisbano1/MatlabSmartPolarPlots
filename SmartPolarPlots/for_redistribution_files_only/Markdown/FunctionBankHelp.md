@@ -1,0 +1,19 @@
+### **Function Bank: Specify what to Plot**
+- #### **Function Toggles**
+	- Enable/Disable the plotting of a given function. If the Function # button is Gray, it will be plotted.
+- #### **Equation Entry Fields**
+	- Manually specify an equation to plot as a function of theta. These boxes will be pre-filled upon starting the program with some examples.
+	- **ABSOLUTE VALUE** is taken on the resulting values before plotting.
+	- **SYNTAX**: All equations should follow the standard matlab equation syntax, and the **theta** variable is a vector so the . (dot) operator should be used for multiplications or divides.
+	- **Predefined Functions**: Functions that are selected in the Predefined Patterns tab will type in the correct equation here for the user.
+	- **SINC & JINC**: To use SINC and JINC functions, you must use type them specially, as they are not standard functions in Matlab and as such I had to add my own versions to this app. These functions remove the discontinuity at x == 0. Call these using the app.mysinc(argument) notation.
+		- **SINC**: y = app.mysinc(x) = sin(pi * x)/(pi * x)
+		- **JINC**: y = app.myjinc(x) = 2*besselj(1,x)/(x) 
+- #### **Legend Entries**
+	- If the Plot Legend is enabled, the strings shown in these fields will be displayed for the given functions' Legend Entry.
+- #### **Directivities**
+	- If the function being plotted is correctly imported/typed in properly **AND** it is computationally reasonable to solve the Directivity for, the functions' directivity will be displayed here after **Plot Function** is clicked. If the calculation of Directivity fails for any reason, the field will be populated with a -1. Read more about the calculation of Directivity values in the Directivity help tab.
+- #### **Line Type**
+	- To allow greater differentiation between different functions being plotted (especially when only using black and white) each functions' line type can be specified. This dropdown allows the user to select the line type for each function.
+- #### **Line Color**
+	- Each functions' color can be specified for plotting. This dropdown allows the user to specify the color of each function. By Right clicking the 'Line Color' text a few presets for line colors are available.

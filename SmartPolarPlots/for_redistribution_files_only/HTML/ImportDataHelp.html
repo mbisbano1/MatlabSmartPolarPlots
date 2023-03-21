@@ -1,0 +1,37 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="MarkdownViewer++" />
+    <title>ImportDataHelp.md</title>
+    <style type="text/css">
+            
+/* Avoid page breaks inside the most common attributes, especially for exports (i.e. PDF) */
+td, h1, h2, h3, h4, h5, p, ul, ol, li {
+    page-break-inside: avoid; 
+}
+
+        </style>
+  </head>
+  <body>
+    <h3 id="import-data-take-lab-results-to-publication">
+      <strong>Import Data: Take Lab Results to Publication</strong>
+    </h3>
+    <p>The Import Data tab is likely the most complicated of all sections in this program. With a bit of patience it should become straight forward. I am open to critiques on the user interface here if you as a user have any suggestions!</p>
+    <p>
+      <strong>Principle of Operation</strong>:
+- <strong>Table Workspace</strong>: This is where imported data can be modified and manipulated before plotting. Think of this table as a temporary location just for the viewing of data. During a session, there are six save slots available for imported functions to plot. Using the Table Workspace the user can view what is stored in these slots and modify as they please. All the plotting of imported data is done with the data currently saved in save slots. That means, just because data is displayed in the table, does not mean it is the data that has been plotted.</p>
+    <ul>
+      <li>
+        <strong>Excel/CSV/MAT Importing</strong>: Click the corresponding import button for your data format. This will load the data into the Table Workspace. Right clicking each of these buttons will allow the user to view a template version of an importable file. These templates must be followed <strong>EXACTLY</strong>. Having extra calculations off to the side will throw off the importing process.
+<ul><li><strong>For Excel</strong>: If you are following the templates as shown, and imports are still not working, you may have stray (invisible) data in some other cells. Select the first two columns of data and copy; then create a new spreadsheet and right click in the top left cell, selecting Paste -&gt; Values. This new spreadsheet should work.</li></ul></li>
+      <li>
+        <strong>Operations on Table Data</strong>: Data imported into the table may not be formatted properly for plotting, so there are a limited number of automated functions that can be performed on that data included in this program. The Table data <strong>must then be saved into a save slot for viewing</strong>.
+<ul><li><strong>Take Absolute Value</strong>: Directional Factor plots are only meant to display magnitude, so if imported data has negative values, you can use this to take the absolute value of every DF data point in the table.
+<ul><li><strong>DF(i) = abs(DF(i))</strong> for all i</li></ul></li><li><strong>Scale By Max Value</strong>: Directional Factor plots are meant to display radius values in the range of 0 to 1. If the imported data in the table needs to be scaled down to this range, this button will do so.
+<ul><li><strong>DF(i) = DF(i)/MAX(DF)</strong> for all i</li></ul></li><li><strong>Insert/Remove Elements</strong>: For directivity calculations, the start/stop angles are important. This is discussed in more detail in the <strong>Directivity Help</strong> section. If imported data has a few extra data points at the beginning or end, these can be removed, or data points can be added if there are a few missing at the edges.
+<strong>Imported Save Slots</strong>:</li><li><strong>Save</strong>: Take data in Table Workspace and store in selected Import Save Slot.</li><li><strong>Load</strong>: Load data from selected Import Save Slot into Table Workspace.
+The save slots provide a way of plotting more than just one imported dataset at a time, as well as making the code convenient to write. As mentioned above, Data in the Table Workspace is not what gets plotted, when adding the imported data to a Function Bank. When the User clicks the <strong>Add</strong> button to add data to a function bank, the data saved in the currently selected <strong>Import Save Slot</strong> is what gets transferred to the Function Bank. That means when data is imported from Excel/CSV/MAT files it is not yet saved to a Import Save Slot, and thus will not be the data plotted if you click the <strong>Add</strong> button. You need to Select an Import Slot you don't mind overwriting and select hit <strong>Save</strong>, and only then will Add store the most recent data in the selected Function Bank.</li></ul></li>
+    </ul>
+  </body>
+</html>
